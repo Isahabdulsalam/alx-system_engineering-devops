@@ -1,1 +1,1 @@
-shell I/0 redirections
+echo 'shell I/0 redirections'
