@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 # Write script of a  regular expression that is matches a given pattern
-puts ARGV[0].scan(/hb?tn/).join
+puts ARGV[0].scan(/hb?t?n/).join
