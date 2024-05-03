@@ -39,14 +39,14 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend stevetech-tech-frontend
+frontend iatech-tech-frontend
     bind *:80
-    default_backend stevetech-tech-backend
+    default_backend iatech-tech-backend
 
-backend stevetech-tech-backend
+backend iatech-tech-backend
     balance roundrobin
-    server 209510-web-01 54.89.77.39:80 check
-    server 209510-web-02 54.234.59.0:80 check
+    server 209510-web-01 52.201.195.8 check
+    server 209510-web-02 52.91.133.231 check
 "
 
 # shellcheck disable=SC2154
