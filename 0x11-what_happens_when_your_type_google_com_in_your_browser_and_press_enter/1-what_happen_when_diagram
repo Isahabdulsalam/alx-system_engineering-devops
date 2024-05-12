@@ -1,0 +1,12 @@
+Schema Illustrating the Flow of the Request When You Type https://www.google.com and Press Enter
+
+• DNS Resolution: Your browser resolves the domain name (www.google.com) to its corresponding IP address.
+• Request to Server IP and Port: Your browser sends a request to the web server's IP address on the appropriate port (usually port 443 for HTTPS).
+• Encrypted Traffic: The traffic between your browser and the web server is encrypted using SSL/TLS to protect the privacy and integrity of the data.
+• Firewall: The request passes through a firewall, which inspects incoming traffic and blocks any malicious or unauthorized attempts to access the server.
+• Load Balancer: The request is distributed to an available web server by a load balancer, ensuring optimal performance and handling of the load.
+• Web Server Response: The web server receives the request, processes it, and serves the requested web page.
+• Application Server: If dynamic content is required, the web server delegates the request to an application server, which generates the dynamic content.
+• Database Query: If the dynamic content requires data from a database, the application server queries the database to retrieve the necessary information.
+
+This schema provides a simplified overview of the complex process that occurs behind the scenes when you type a URL into your browser and press Enter. The actual flow of the request may vary depending on the specific website and infrastructure, but the general principles outlined in this diagram remain consistent.
