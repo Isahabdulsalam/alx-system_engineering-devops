@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script reloads Gunicorn in a graceful way.
+
+# Get the PID of the Gunicorn master process
+MASTER_PID=$(pgrep -f "gunicorn.*master")
+
+# Send the HUP signal to the Gunicorn master process
+kill -HUP $MASTER_PID
+
+# Wait for the Gunicorn master process to reload
+sleep 1
+
+# Check if the Gunicorn master process reloaded successfully
+if pgrep -f "gunicorn.*master" >/dev/null; then
+  echo "Gunicorn master process reloaded successfully."
+else
+  echo "Gunicorn master process failed to reload."
+fi
